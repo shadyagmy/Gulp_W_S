@@ -1,0 +1,26 @@
+.textCenter{
+    text-align: center!important;
+}
+
+
+.marginBottom_small{margin-bottom: 1.4rem!important;}
+.marginBottom_medium{margin-bottom: 4.6rem!important;
+    @include respond(tab-port){
+        margin-bottom: 3.6rem!important;
+    }
+}
+.marginBottom_large{margin-bottom: 8rem!important;
+    @include respond(tab-port){
+        margin-bottom: 6rem!important;
+    }
+}
+
+.marginTop_small{margin-top: 1.4rem!important;}
+.marginTop_medium{margin-top: 3.5rem!important;}
+.marginTop_large{margin-top: 8rem!important;}
+.marginTop_huge{margin-top: 10rem!important;}
+
+
+h1 {
+    color: red;
+}

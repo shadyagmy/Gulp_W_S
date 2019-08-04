@@ -1,0 +1,33 @@
+.header{
+    background-image:linear-gradient(to left,
+     rgba($lightGreen,.8),
+      rgba($darkGreen ,.8)),
+url(../images/hero-small.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 95vh;
+    position: relative;
+    clip-path:polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    -webkit-clip-path:polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    @include respond(phone){
+        clip-path:polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+        -webkit-clip-path:polygon(0 0, 100% 0, 100% 88vh, 0 100%);  
+    }
+   
+    &__logo{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        height: 4rem;
+    }
+
+    &__header-text{
+        @include centerPositioning;
+        top: 43%;
+        text-align: center;
+        @include respond(phone){
+            top: 52%; 
+        }
+
+    }
+}
